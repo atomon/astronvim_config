@@ -25,4 +25,10 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+
+  -- mappings.lua
+  v = {
+    ["J"] = { ":move '>+1<CR>gv-gv", desc = "Move lines of code up" },
+    ["K"] = { ":move '<-2<CR>gv-gv", desc = "Move lines of code down" },
+  },
 }
