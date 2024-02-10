@@ -8,6 +8,8 @@ return {
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
     mousescroll = {"ver:9", "hor:6"},
+    tabstop = 4,
+    shiftwidth = 4,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
