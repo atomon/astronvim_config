@@ -24,6 +24,7 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    ["<ESC>"] = {"<C-\\><C-n>", desc = "change normal mode"},
   },
 
   -- mappings.lua
