@@ -10,8 +10,8 @@ local opt_config = function()
   opt["mousescroll"] = {"ver:9", "hor:6"}
   opt["tabstop"] = 4
   opt["shiftwidth"] = 4
-
-  if vim.fn.executable "pwsh" then
+  
+  if vim.fn.executable("pwsh") == 1 then
     -- sets Nvim terminal for pwsh (https://www.siddharta.me/configuring-neovim-as-a-python-ide-2023.html)
     opt["shell"] = vim.fn.executable "pwsh" and "pwsh" or "/bin/bash"
     opt["shellcmdflag"] = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
